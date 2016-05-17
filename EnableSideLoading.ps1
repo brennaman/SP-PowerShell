@@ -1,7 +1,6 @@
 $programFiles = [environment]::getfolderpath("programfiles")
 
-add-type -Path $programFiles'\SharePoint Online Management Shell\' + `
-  'Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll'
+Add-Type -Path $programFiles'\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll'
 
 Write-Host `
   'To enable SharePoint app sideLoading, ' + `
